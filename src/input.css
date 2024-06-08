@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@layer base{
+    @font-face{
+        font-family: 'Sora';
+    }
+
+    *{
+        font-family: 'Sora';
+    }
+}
+
+:root{
+    --main-font: 'Sora', sans-serif;
+    --second-font: 'Playball', cursive;
+
+}
+
+*{
+    font-family: var(--main-font);
+}
+
+.logo{
+    font-family: 'Playball',cursive;
+}
+
+.datasuccess{
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tailwind Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Alpine Js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <title>AyEstate</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav x-data="{open:false}" class="py-5 lg:py-7 px-5 lg:bg-lightgrey">
+        <div class="container lg:px-10 mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="#" class="logo text-playball text-3xl font-normal">AyEstate</a>
+                <img class="lg:hidden cursor-pointer" @click="open = !open" src="../public/asset/logo/nav.svg" alt="">
+                <div class="hidden lg:flex space-x-6">
+                    <ul class="flex gap-12 ">
+                        <li class="text-base text-black font-bold">Home</li>
+                        <li class="text-base text-secondcolor font-semibold">Listing</li>
+                        <li class="text-base text-secondcolor font-semibold">Company</li>
+                        <li class="text-base text-secondcolor font-semibold">Blog</li>
+                        <li class="text-base text-secondcolor font-semibold">About Us</li>
+                    </ul>
+                </div>
+                <button class="hidden lg:flex w-40 bg-maincolor px-3 py-4 font-semibold rounded-xl text-sm justify-center border">Contact Us</button> 
+            </div>
+            <div x-show="open" class="fixed lg:hidden flex flex-col right-0 mr-5 w-1/3 bg-maincolor rounded-xl p-4"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90">
+                <ul class="space-y-4">
+                    <li><a href="#" class="block text-sm font-semibold">Home</a></li>
+                    <li><a href="#" class="block text-sm font-semibold">Listing</a></li>
+                    <li><a href="#" class="block text-sm font-semibold">Company</a></li>
+                    <li><a href="#" class="block text-sm font-semibold">Blog</a></li>
+                    <li><a href="#" class="block text-sm font-semibold">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-lightgrey">
+        <div class="container mx-auto px-4 lg:px-0 py-12 lg:py-7">
+            <div class="grid grid-cols-12 lg:h-full lg:gap-21">
+                <div class="flex items-center col-span-12 lg:col-span-6 lg:px-0 lg:justify-center lg:items-center lg:pl-5">
+                    <div class="px-4 lg:px-0 text-center lg:text-left">
+                        <h1 class="leading-tight text-4xl font-bold text-center px-1 lg:text-[56px] lg:text-left">
+                            Discover Your Dream Home Today
+                        </h1>
+                        <p class="text-center text-sm2 font-normal leading-6 mt-6 mb-2 lg:text-lg lg:text-left lg:mt-10">
+                            Find the perfect property that suits your lifestyle. Our real estate service offers unique selling propositions that set us apart from the competition. Find your perfect home today!
+                        </p>
+                        <div class= "gap-4 flex mt-4 justify-center lg:mt-16 lg:justify-start">
+                            <button class="px-6 py-3 bg-maincolor text-sm font-semibold rounded-xl">Explore Now</button>
+                            <button class="px-6 py-3 bg-white text-sm font-semibold border-black border-solid bg-transparent border-2 rounded-xl">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end col-span-12 lg:col-span-6 mt-12 lg:mt-0">
+                    <img src="../public/asset/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <div class="container mx-auto px-5 py-12 lg:px-0 lg:pt-20 lg:pb-11">
+            <div class="grid grid-cols-12 gap-5 lg:gap-8">
+                <div class="col-span-12 lg:col-span-6 flex flex-col gap-3 lg:gap-4 lg:pr-6">
+                    <span class="text-black font-semibold leading-6 text-sm">Discover</span>
+                    <h1 class="text-black font-bold leading-tight text-3xl lg:text-5xl">Find Your Dream Property with Us</h1>
+                </div>
+                <div class="col-span-12 lg:col-span-6 lg:pl-6">
+                    <p class="text-black font-normal leading-7 lg:text-base text-sm2">At our real estate agency, we offer a range of services to help you with your property needs. Whether you're looking to buy, sell, or get a valuation, our experienced team is here to assist you every step of the way.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-6 lg:gap-8 mt-12 lg:mt-20">
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-start text-start gap-5 lg:gap-6">
+                    <img src="../public/asset/logo/logo-property.svg" alt="" class="h-16">
+                    <h1 class="text-black font-bold leading-9 lg:leading-10 text-2xl lg:text-3xl">Property Buying and Selling</h1>
+                    <p class="text-black font-normal leading-6 text-sm">We provide expert guidance for buying and selling properties, ensuring a smooth and successful transaction.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-start text-start gap-5 lg:gap-6">
+                    <img src="../public/asset/logo/logo-property.svg" alt="" class="h-16">
+                    <h1 class="text-black font-bold leading-9 lg:leading-10 text-2xl lg:text-3xl">Property Valuation Services</h1>
+                    <p class="text-black font-normal leading-6 text-sm">Our team of certified appraisers offers accurate property valuations to help you make informed decisions.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-start text-start gap-5 lg:gap-6">
+                    <img src="../public/asset/logo/logo-property.svg" alt="" class="h-16">
+                    <h1 class="text-black font-bold leading-9 lg:leading-10 text-2xl lg:text-3xl">Real Estate Investment Advice</h1>
+                    <p class="text-black font-normal leading-6 text-sm">Get expert advice on real estate investment strategies to maximize your returns.</p>
+                </div>
+            </div>
+            <div class="mt-12 flex gap-6">
+                <button class="px-6 py-3 bg-maincolor text-sm font-semibold rounded-xl">Learn More</button>
+                <a href="#" class="flex items-center text-sm font-normal">Contact &nbsp; &gt;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section>
+        <div class="container mx-auto lg:px-0 lg:py-20 px-5 py-[50px]">
+            <div class="relative w-full lg:w-7/12 mx-auto p-0 text-center flex flex-col items-center justify-center gap-6">
+                <h1 class="text-sm font-semibold leading-6">Simplify</h1>
+                <h2 class="text-3xl lg:text-5xl font-bold leading-9 lg:leading-tight">Streamline Your Property Buying or Selling Process</h2>
+                <p class="text-sm lg:text-base font-normal leading-6 lg:leading-7">Our website provides a step-by-step guide to help you seamlessly navigate the process of buying or selling property. From finding the perfect property to closing the deal, we've got you covered.</p>
+            </div>
+            <div class="mt-12 lg:mt-20 grid grid-cols-12 lg:gap-12">
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center gap-5 lg:gap-8">
+                    <img src="../public/asset/house.jpeg" alt="" class="rounded-xl h-56 lg:h-60">
+                    <h1 class="font-bold text-2xl lg:text-3xl leading-9 lg:leading-10">Find Your Dream Property</h1>
+                    <p class="font-normal text-sm leading-6">Browse through a wide selection of properties that match your preferences and requirements.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center gap-5 lg:gap-8 mt-12 lg:mt-0">
+                    <img src="../public/asset/work.jpeg" alt="" class="rounded-xl h-56 lg:h-60">
+                    <h1 class="font-bold text-2xl lg:text-3xl leading-9 lg:leading-10">Connect with Trusted Agents</h1>
+                    <p class="font-normal text-sm leading-6">Our platform connects you with experienced and reliable real estate agents who will guide you through the process.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center gap-5 lg:gap-8 mt-12 lg:mt-0">
+                    <img src="../public/asset/deal.jpeg" alt="" class="rounded-xl h-56 lg:h-60">
+                    <h1 class="font-bold text-2xl lg:text-3xl leading-9 lg:leading-10">Negotiate and Close the Deal</h1>
+                    <p class="font-normal text-sm leading-6">Our experts will assist you in negotiating the best terms and ensuring a smooth closing process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rate Section -->
+    <section class="bg-black text-white">
+        <div class="container mx-auto py-[50px] px-5 gap-12 lg:mx-16 lg:px-0 lg:py-20 flex flex-col lg:gap-20">
+            <div class="grid grid-cols-12 gap-5 lg:gap-8">
+                <div class="col-span-12 lg:col-span-6 flex flex-col gap-3 lg:gap-4 lg:pr-6">
+                    <span class="font-semibold leading-6 text-sm">Innovative</span>
+                    <h1 class="font-bold leading-tight text-3xl lg:text-5xl">Transforming the Real Estate Industry with Excellence</h1>
+                </div>
+                <div class="col-span-12 lg:col-span-6 lg:pl-6 flex flex-col items-center lg:items-start">
+                    <p class="font-normal leading-7 lg:text-base text-sm">At our company, we take pride in our exceptional success rate, having listed thousands of properties, and ensuring client satisfaction is our top priority.</p>
+                    <button class="px-6 py-3 bg-maincolor text-sm font-semibold rounded-xl mt-8 text-black items-center justify-center">Learn More</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-8 lg:gap-12">
+                <div class="col-span-12 lg:col-span-4 border-l-4 border-white border-solid pl-8 flex flex-col items-start text-start gap-2">
+                    <h1 class="font-bold text-[56px] lg:text-[80px] datasuccess leading-[72px] lg:leading-[104px]">30%</h1>
+                    <span class="font-bold lg:text-xl text-base leading-6 lg:leading-7">Success Rate</span>
+                </div>
+                <div class="col-span-12 lg:col-span-4 border-l-4 border-white border-solid pl-8 flex flex-col items-start text-start gap-2">
+                    <h1 class="font-bold text-[56px] lg:text-[80px] datasuccess leading-[72px] lg:leading-[104px]">30%</h1>
+                    <span class="font-bold lg:text-xl text-base leading-6 lg:leading-7">Properties Listed</span>
+                </div>
+                <div class="col-span-12 lg:col-span-4 border-l-4 border-white border-solid pl-8 flex flex-col items-start text-start gap-2">
+                    <h1 class="font-bold text-[56px] lg:text-[80px] datasuccess leading-[72px] lg:leading-[104px]">30%</h1>
+                    <span class="font-bold lg:text-xl text-base leading-6 lg:leading-7">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section>
+        <div class="container mx-auto lg:px-0 lg:py-20 px-5 py-[50px]">
+            <div class="relative w-full lg:w-7/12 mx-auto p-0 text-center flex flex-col items-center justify-center gap-6">
+                <h1 class="text-sm font-semibold leading-6">Find</h1>
+                <h2 class="text-3xl lg:text-5xl font-bold leading-9 lg:leading-tight">Properties</h2>
+                <p class="text-sm lg:text-base font-normal leading-6 lg:leading-7">Explore our curated list of properties and find your dream home.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-20">
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/villa.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Luxury Villa</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Oceanfront</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$1,000,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/apartment.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Chill Apartment</h1>
+                        <h2 class="text-sm2 font-normal leading-5">City Center</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$500,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/cottage.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Cozy Cottage</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Mountain View</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$300,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/condo.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Spacious Condo</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Beachfront</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$700,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/penthouse.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Luxury Penthouse</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Downtown</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$1,500,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/retreat.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Lakefront Retreat</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Lake View</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$800,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/bungalow.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Nusa Indah Villa</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Garden View</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$400,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+                <div class= "text-center flex flex-col gap-4">
+                    <img src="../public/asset/villa.jpeg" class="w-full object-cover lg:rounded-xl h-[189px] lg:h-[364px]">
+                    <div>
+                        <h1 class="text-sm lg:text-lg font-semibold leading-6 lg:leading-7">Luxury Villa</h1>
+                        <h2 class="text-sm2 font-normal leading-5">Oceanfront</h2>
+                    </div>
+                    <p class="text-lg lg:text-xl font-semibold">$1,000,000</p>
+                    <button class="text-sm2 lg:text-sm font-semibold lg:font-normal border-solid border-maincolor lg:border-black border-2 rounded-xl py-2 px-5">View Details</button>
+                </div>
+            </div>
+            <div class="lg:hidden items-center justify-center flex mt-10">
+                <button class="px-6 py-3 bg-maincolor text-sm font-semibold rounded-xl mt-8 text-black items-center justify-center">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-[#FEE]">
+        <div class="container mx-auto py-[50px] px-5">
+            <div class="relative w-full lg:w-2/3 flex flex-col gap-6 lg:gap-0 text-center justify-center mx-auto items-center">
+                <h1 class="font-bold lg:font-semibold text-2xl lg:text-5xl leading-[28px] lg:leading-[57px]">Customer Testimonials</h1>
+                <div class="flex items-center lg:mt-[50px]">
+                    <svg class="w-4 h-4 text-black-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                    </svg>
+                    <svg class="w-4 h-4 text-black-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                    </svg>
+                    <svg class="w-4 h-4 text-black-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                    </svg>
+                    <svg class="w-4 h-4 text-black-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                    </svg>
+                    <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                    </svg>
+                </div>
+                <p class="font-bold text-xl lg:text-2xl leading-7 lg:leading-8 lg:mt-8">Our experience with this real estate website design has been nothing short of amazing. The team was professional, responsive, and delivered beyond our expectations.</p>
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:mt-8">
+                    <img src="../public/asset/Avatar Image.png" class="object-cover w-14" alt="">
+                    <div class="flex flex-col">
+                        <h3 class="font-semibold text-sm leading-6">John Doe</h3>
+                        <h4 class="font-normal text-sm leading-6">CEO, ABC Realty</h4>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container mx-auto py-[50px] px-5">
+            <div class="relative w-full lg:w-2/3 flex flex-col gap-4 lg:gap-8 text-center justify-center mx-auto items-center">
+                <p class="hidden lg:block text-[#F59A74 lg:font-semibold lg:text-base] ">FAQ</p>
+                <h1 class="font-bold lg:font-bold text-2xl lg:text-4xl leading-[31px] lg:leading-[57px]">Frequently Asked
+                    Question</h1>
+                <p class="text-[#7F879E] font-normal text-sm2 lg:text-base leading-6 lg:leading-7">Did you find the question as you expected?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black text-white">
+        <div class="container mx-auto py-10 lg:py-[60px] px-5">
+            <div class="w-full lg:w-2/3 flex flex-col gap-3 lg:gap-6 text-center justify-center mx-auto items-center">
+                <h1 class="uppercase font-bold text-xl lg:text-4xl leading-6 lg:leading-[54px]">Let’s start a <br> successful project</h1>
+                <p class="text-[#C7C1EA] lg:text-white font-normal text-[12px] lg:text-base leading-5 lg:leading-7">We deliver immediate business impact and long-term ROI for your brand. Find out why Astheris are Australia's trusted Digital Agency.</p>
+                <button class="flex w-full lg:w-auto px-6 py-3 bg-maincolor text-sm lg:text-base font-semibold leading-5 lg:leading-7 rounded-full text-black items-center justify-center">Start A Project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white">
+        <div class="container mx-auto px-5 pt-[50px] lg:pt-[100px] flex gap-[230px]">
+            <div class="flex flex-col gap-5 lg:gap-6">
+                <div>
+                    <a href="#" class="logo text-playball text-3xl font-normal">AyEstate</a>
+                </div>
+                <div class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-5 lg:leading-8">hello.ayestate@example.com <br>
+                    (+1) 2345 6789</div>
+                <div class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-5 lg:leading-8">4140 Parker Rd. Allentown, <br>
+                    New Mexico 31134</div>
+                <hr class="lg:hidden h-0.5 bg-[#2E334B] my-4 w-full">
+            </div>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-8 lg:gap-x-20 lg:grid-cols-4">
+                <div class="flex flex-col gap-3 w-fit">
+                    <h1 class="text-white lg:mb-8 font-bold lg:font-semibold text-sm lg:text-base leading-5 lg:leading-6">Pages</h1>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Listings</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">About Us</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Blog</p>
+                </div>
+                <div class="flex flex-col gap-3 w-fit">
+                    <h1 class="text-white lg:mb-8 font-bold lg:font-semibold text-sm lg:text-base leading-5 lg:leading-6">Support</h1>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Properties</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">FAQ</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Contact Us</p>
+                </div>
+                <div class="flex flex-col gap-3 w-fit">
+                    <h1 class="text-white lg:mb-8 font-bold lg:font-semibold text-sm lg:text-base leading-5 lg:leading-6">Legal</h1>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Terms of Services</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Terms and Condition</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Complaints Process</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Privacy Policy</p>
+                </div>
+                <div class="flex flex-col gap-3 w-fit">
+                    <h1 class="text-white lg:mb-8 font-bold lg:font-semibold text-sm lg:text-base leading-5 lg:leading-6">Platform</h1>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Desktop App</p>
+                    <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Mobile App</p>
+                </div>
+            </div>
+        </div>
+        <div class="container hidden lg:block mx-auto px-5 lg:pt-[40px] lg:pb-8 text-center items-center justify-center">
+            <p class="font-normal text-base leading-7">Copyright © AyEstate | Designed by AY Studio</p>
+        </div>
+    </footer>
+</body>
+</html>
