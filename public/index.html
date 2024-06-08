@@ -14,9 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/public/output.css">
     <!-- Alpine Js -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <!-- Style Background -->
+    <style>
+        .bg-custom{
+            background-image: url('/public/asset/Abstract.png'), url('/public/asset/Abstract2.png');
+            background-position: right bottom, top left;
+            background-repeat: no-repeat;
+        }
+    </style>
     <title>AyEstate</title>
 </head>
 <body>
@@ -57,7 +65,7 @@
 
     <!-- Hero Section -->
     <section class="bg-lightgrey">
-        <div class="container mx-auto px-4 lg:px-0 py-12 lg:py-7">
+        <div class="container mx-auto px-4 lg:pt-[30px] lg:pb-[70px] py-12 lg:py-7">
             <div class="grid grid-cols-12 lg:h-full lg:gap-21">
                 <div class="flex items-center col-span-12 lg:col-span-6 lg:px-0 lg:justify-center lg:items-center lg:pl-5">
                     <div class="px-4 lg:px-0 text-center lg:text-left">
@@ -309,7 +317,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-black text-white">
+    <section class="bg-black text-white bg-custom">
         <div class="container mx-auto py-10 lg:py-[60px] px-5">
             <div class="w-full lg:w-2/3 flex flex-col gap-3 lg:gap-6 text-center justify-center mx-auto items-center">
                 <h1 class="uppercase font-bold text-xl lg:text-4xl leading-6 lg:leading-[54px]">Let’s start a <br> successful project</h1>

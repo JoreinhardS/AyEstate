@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily:{
@@ -32,6 +32,14 @@ module.exports = {
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px'
+      },
+      backgroundImage: {
+        'custom-bg-top-left': "url('/asset/Abstract2.png')",
+        'custom-bg-bottom-right': "url('/asset/Abstract.png')"
+      },
+      backgroundPosition: {
+        'top-left': 'top left',
+        'bottom-right': 'bottom right',
       }
     },
   },
