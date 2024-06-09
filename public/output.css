@@ -832,6 +832,10 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -903,6 +907,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#\#7F879E\] {
+  background-color: ##7F879E;
 }
 
 .object-cover {
@@ -1282,6 +1290,10 @@ video {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-\[230px\] {
+    gap: 230px;
   }
 
   .lg\:gap-x-20 {
