@@ -14,6 +14,9 @@ module.exports = {
         black: '#0B0F0E',
         lightgrey: '#F6F3F3',
         white: '#FFFFFF',
+        primary: {
+          500: '#3b82f6',
+        },
       },
       fontSize: {
         'sm2': '0.875rem',

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tailwind Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    
+    <!-- Alpine Js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <!-- Background -->
+    <style>
+        .bg-custom{
+            background-image: url('../asset/Abstract.png'), url('../asset/Abstract2.png');
+            background-position: right bottom, top left;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <script src="../js/header.js"></script> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentPage = "about"; // Sesuaikan dengan halaman saat ini
+
+            // Temukan elemen <li> yang sesuai dengan halaman saat ini
+            var currentItem = document.querySelector('[data-page="' + currentPage + '"]');
+
+            // Jika ditemukan, nonaktifkan kelas "font-bold"
+            if (currentItem) {
+                currentItem.classList.remove('font-bold');
+                currentItem.classList.add('font-semibold');
+            }
+        });
+    </script>
+
+    <title>Team</title>
+</head>
+<body>
+
+    <!-- Data -->
+    <section>
+        <div class="mx-auto flex flex-col gap-5 lg:gap-[50px] lg:mb-[80px]">
+            <img src="../asset/header.png" class="object-cover w-auto h-[240px] lg:h-auto lg:w-full">
+            <div class="container mx-auto px-5 lg:px-[40px] p-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center text-start gap-5 lg:gap-30">
+                    <div class="flex flex-row gap-2 lg:gap-10">
+                        <div class="gap-2 lg:gap-3 flex flex-col">
+                            <h1 class="leading-tight font-bold text-sm lg:text-[28px]">500+</h1>
+                            <p class="text-[#534F69] leading-tight font-normal text-[12px] lg:text-base">Succesfull Project</p>
+                        </div>
+                        <div class="gap-2 lg:gap-3 flex flex-col">
+                            <h1 class="leading-tight font-bold text-sm lg:text-[28px]">600+</h1>
+                            <p class="text-[#534F69] leading-tight font-normal text-[12px] lg:text-base">Satisfied Client</p>
+                        </div>
+                        <div class="gap-2 lg:gap-3 flex flex-col">
+                            <h1 class="leading-tight font-bold text-sm lg:text-[28px]">150+</h1>
+                            <p class="text-[#534F69] leading-tight font-normal text-[12px] lg:text-base">Awwards Winners</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[#534F69] leading-5 lg:leading-7 font-normal text-sm2 lg:text-base">We’re a diverse group of real estate agent with different skills who make things people love to use. We help the world’s most solve problems and generate growth real estate.</p>
+                    </div>
+                    </div>
+                <hr class="lg:hidden h-0.5 bg-[##7F879E] my-4 w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="px-5 pt-0 pb-5 lg:px-[100px] lg:pb-[112px] lg:pt-[60px]">
+        <div class="container mx-auto flex flex-col gap-[15px] lg:gap-[120px]">
+            <div class="items-center text-center flex flex-col gap-4 lg:gap-[15px]">
+                <div class="bg-[#F4F2FF] px-4 py-[6px] lg:py-3 rounded-[50px] lg:rounded-[40px]">
+                    <span class="text-[#5A48C3] uppercase font-semibold text-sm lg:text-sm2">Our Team</span>
+                </div>
+                <h1 class="uppercase font-bold text-[28px] lg:text-[36px] tracking-[-0.72px]">meet our creative team</h1>
+                <p class="font-normal text-sm2 lg:text-base tracking-[-0.36px]">Magna metus, adipiscing dictumst magna fringilla metus fermentum tristique. Enim vitae purus lectus augue maecenas</p>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-12 gap-[30px] lg:gap-x-8 lg:gap-y-[64px]">
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/abubakar.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Abubakar">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Muhammad Abubakar A.</span>
+                            <span class="font-normal text-sm2 lg:text-base">Director</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/isak.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Isak">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Alexander Isak</span>
+                            <span class="font-normal text-sm2 lg:text-base">CEO</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/christina.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Christina">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Christina W.</span>
+                            <span class="font-normal text-sm2 lg:text-base">Manager</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/brian.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Brian">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Brian Oconner</span>
+                            <span class="font-normal text-sm2 lg:text-base">Supervisor</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/natalie.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Natalie">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Natalie A.</span>
+                            <span class="font-normal text-sm2 lg:text-base">Creative Director</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/hengky.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Hengky">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Hengky Doe</span>
+                            <span class="font-normal text-sm2 lg:text-base">Developers</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/anna.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Anna">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Anna Withanna</span>
+                            <span class="font-normal text-sm2 lg:text-base">Marketing</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col lg:col-span-3 text-start lg:text-center gap-4 lg:gap-6 lg:justify-center lg:items-center">
+                    <div class="w-[335px] h-[260px] rounded-xl lg:w-20 lg:h-20 lg:rounded-full lg:overflow-hidden">
+                        <img src="../asset/setya.png" class="w-full h-full object-cover object-center rounded-xl lg:rounded-none" alt="Setya">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2 lg:gap-0">
+                            <span class="font-bold lg:font-semibold text-sm lg:text-xl">Setya Wijayanti</span>
+                            <span class="font-normal text-sm2 lg:text-base">Content Creator</span>
+                        </div>
+                        <p class="hidden lg:flex lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-row justify-center items-center lg:gap-[14px]">
+                        <img src="../asset/logo/LinkedIn.svg" alt="">
+                        <img src="../asset/logo/X.svg" alt="">
+                        <img src="../asset/logo/Dribble.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement -->
+    <section class="bg-[#16112F] px-5 py-10 lg:px-[120px] lg:py-[80px] text-white">
+        <div class="container mx-auto flex flex-col gap-4 lg:gap-[60px]">
+            <div class="bg-[#FFFFFF1A] w-fit px-4 py-[6px] lg:py-3 rounded-[50px] lg:rounded-[40px]">
+                <span class="uppercase font-semibold text-sm lg:text-sm2">Achievement</span>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-[80px]">
+                <h1 class="font-bold text-[28px] lg:text-[36px] uppercase tracking-[-0.56px] lg:tracking-[-0.72px]">Our award this year</h1>
+                <p class="font-normal text-sm2 lg:text-base">We’re happy to receive this award so that it motivates us to grow and provide the best service for you.</p>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-3 gap-4 lg:gap-6">
+                <div class="col-span-1 px-5 py-6 lg:px-6 lg:py-8 flex flex-col gap-6">
+                    <img src="../asset/logo/medal-star.svg" alt="" class="object-cover w-[36px] h-auto">
+                    <div class="flex flex-col gap-3 lg:gap-4">
+                            <h1 class="font-bold text-xl lg:text-[28px]">Best Small Companies</h1>
+                            <p class="font-normal text-sm2 leading-5 tracking-[-0.28px]">Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 px-5 py-6 lg:px-6 lg:py-8 flex flex-col gap-6">
+                    <img src="../asset/logo/medal-star.svg" alt="" class="object-cover w-[36px] h-auto">
+                    <div class="flex flex-col gap-3 lg:gap-4">
+                            <h1 class="font-bold text-xl lg:text-[28px]">Fast Company Growth</h1>
+                            <p class="font-normal text-sm2 leading-5 tracking-[-0.28px]">Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 px-5 py-6 lg:px-6 lg:py-8 flex flex-col gap-6">
+                    <img src="../asset/logo/medal-star.svg" alt="" class="object-cover w-[36px] h-auto">
+                    <div class="flex flex-col gap-3 lg:gap-4">
+                            <h1 class="font-bold text-xl lg:text-[27px] tracking-[-0.56px]">Best Development Team</h1>
+                            <p class="font-normal text-sm2 leading-5 tracking-[-0.28px]">Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex text-center items-center justify-center">
+                <button class="flex items-center justify-center w-full lg:w-auto px-6 py-3 lg:py-[14px] border border-solid border-white rounded-[40px] text-sm font-semibold leading-5 lg:leading-7">View All Project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg></button>
+            </div>
+            <div>
+                <hr class="h-0.5 bg-[rgba(255, 255, 255, 0.10)] my-4 w-full mx-auto">
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <h1 class="font-normal text-[12px] lg:text-base px-5">We’ve built with the most growth company around the world</h1>
+                <div class="w-full flex justify-center">
+                    <div class="grid grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-[50px]">
+                        <img src="../asset/logo/facebook.png" alt="">
+                        <img src="../asset/logo/netflix.png" alt="">
+                        <img src="../asset/logo/amazon.png" alt="">
+                        <img src="../asset/logo/youtube.png" alt="" class="justify-center">
+                        <img src="../asset/logo/google.png" alt="" class="justify-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black text-white bg-custom">
+        <div class="container mx-auto py-10 lg:py-[60px] px-5">
+            <div class="w-full lg:w-2/3 flex flex-col gap-3 lg:gap-6 text-center justify-center mx-auto items-center">
+                <h1 class="uppercase font-bold text-xl lg:text-4xl leading-6 lg:leading-[54px]">Let’s start a <br> successful project</h1>
+                <p class="text-[#C7C1EA] lg:text-white font-normal text-[12px] lg:text-base leading-5 lg:leading-7">We deliver immediate business impact and long-term ROI for your brand. Find out why Astheris are Australia's trusted Digital Agency.</p>
+                <button class="flex w-full lg:w-auto px-6 py-3 bg-maincolor text-sm lg:text-base font-semibold leading-5 lg:leading-7 rounded-full text-black items-center justify-center">Start A Project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg></button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/footer.js"></script>
+</body>
+</html>
