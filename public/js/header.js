@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img class="lg:hidden cursor-pointer" @click="open = !open" src="../asset/logo/nav.svg" alt="">
                     <div class="hidden lg:flex space-x-6">
                         <ul class="flex gap-12 ">
-                            <li class="text-base text-secondcolor font-semibold">Home</li>
+                            <li class="text-base text-secondcolor font-semibold"><a href="../index.html">Home</li>
                             <li class="text-base text-secondcolor font-semibold">Listing</li>
                             <li class="text-base text-secondcolor font-semibold">Company</li>
-                            <li class="text-base text-secondcolor font-semibold">Blog</li>
-                            <li class="text-base text-secondcolor font-semibold">About Us</li>
+                            <li class="text-base text-secondcolor font-semibold"><a href="pages/blog.html">Blog</a></li>
+                            <li class="text-base text-secondcolor font-semibold"><a href="pages/about.html">About Us</a></li>
                         </ul>
                     </div>
                     <button class="hidden lg:flex w-40 bg-maincolor px-3 py-4 font-semibold rounded-xl text-sm justify-center border">Contact Us</button> 
@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     x-transition:leave-start="opacity-100 scale-100"
                     x-transition:leave-end="opacity-0 scale-90">
                     <ul class="space-y-4">
-                        <li><a href="#" class="block text-sm font-semibold">Home</a></li>
+                        <li><a href="../index.html" class="block text-sm font-semibold">Home</a></li>
                         <li><a href="#" class="block text-sm font-semibold">Listing</a></li>
                         <li><a href="#" class="block text-sm font-semibold">Company</a></li>
-                        <li><a href="#" class="block text-sm font-semibold">Blog</a></li>
-                        <li><a href="#" class="block text-sm font-semibold">About Us</a></li>
+                        <li><a href="pages/blog.html" class="block text-sm font-semibold">Blog</a></li>
+                        <li><a href="pages/about.html" class="block text-sm font-semibold">About Us</a></li>
                     </ul>
                 </div>
             </div>
