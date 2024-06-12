@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tailwind Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Alpine Js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <title>Blog</title>
+</head>
+<body>
+
+    <section>
+        <div class="container px-5 lg:m-[100px] flex flex-col text-center justify-center items-center">
+            <h1 class="font-bold text-2xl lg:text-[44px]">Our Blog</h1>
+            <div class="mt-[50px] w-full lg:w-2/3 -z-10">                
+                <form class="mx-auto">   
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-blue-600 dark:text-[#3860E2]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </div>
+                    <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-[#7F879E] rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search article name" required />
+                    <button type="submit" class="hidden lg:flex text-black absolute end-2.5 bottom-[6px] bg-maincolor hover:bg-maincolor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-[10px] dark:bg-maincolor dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="flex flex-row gap-4 lg:gap-6 mt-6 font-normal lg:font-semibold text-[12px] lg:text-sm items-center justify-start lg:justify-center text-start lg:text-center w-full">
+                <span class="text-[#7F879E]">Suggested:</span>
+                <span class="text-[#3860E2]">Success Stories</span>
+                <span class="text-[#3860E2]">Invest</span>
+                <span class="text-[#3860E2]">Tips</span>
+                <span class="hidden lg:flex text-[#3860E2]">Success Story</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- List -->
+    <section>
+        <div class="container p-4 pb-[50px] lg:pb-0 lg:p-0 lg:m-[100px] flex flex-col lg:grid lg:grid-cols-7 gap-[30px]">
+            <div class="col-span-4">
+                <div class="relative rounded-2xl overflow-hidden">
+                    <img src="../asset/bloh.png" class="object-cover w-full h-[317px] lg:h-[588px]" alt="">
+                    <div class="absolute bottom-0 w-full p-4 lg:p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-center">
+                        <div class="text-[rgba(255, 255, 255, 0.70)] opacity-70 flex flex-row gap-3">
+                            <span class="font-normal lg:font-semibold text-[12px] lg:text-base">8 Feb 2024</span>
+                            <img src="../asset/logo/Ellipse 51.svg" alt="">
+                            <span class="font-normal lg:font-semibold text-[12px] lg:text-base">Success Stories</span>
+                        </div>
+                        <h1 class="mt-0 lg:mt-3 font-bold text-sm2 lg:text-[28px] text-start lg:leading-[36px] leading-[18px] capitalize">From $0 to $40 Million: How a 10-Year Old Orphan Became a Successful Investor</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3">
+                <div class="flex flex-col gap-5 lg:gap-[30px]">
+                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                        <img src="../asset/job.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
+                        <div class="flex flex-col gap-[6px] lg:gap-6">
+                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">2 Feb 2024</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                    <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                </svg>
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">Invest Strategies</span>
+                            </div>
+                            <p class="font-bold text-sm2 lg:text-xl">The Quick Guide to Virtual House Flipping</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                        <img src="../asset/stock.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
+                        <div class="flex flex-col gap-[6px] lg:gap-6">
+                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">20 January 2024</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                    <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                </svg>
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">Tips</span>
+                            </div>
+                            <p class="font-bold text-sm2 lg:text-xl">Expert Home price Forecasts for 2024 revised up</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                        <img src="../asset/rumah.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
+                        <div class="flex flex-col gap-[6px] lg:gap-6">
+                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">15 January 2024</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                    <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                </svg>
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">Tips</span>
+                            </div>
+                            <p class="font-bold text-sm2 lg:text-xl">How to Choose the Right Real Estate Agent for Your Needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular -->
+    <section>
+        <div class="container px-5 pb-[50px] lg:px-0 lg:mx-[100px] lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
+            <div class="items-center flex flex-row justify-between">
+                <div class="flex flex-col gap-2 lg:gap-3">
+                    <h1 class="font-bold text-sm lg:text-3xl">Popular Articles</h1>
+                    <p class="text-[#7F879E] font-normal text-[12px] lg:text-base">We provide blog that help start your career on AyEstate</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <button class="rounded-xl border border-maincolor px-3 py-2 lg:px-4 lg:py-3 font-semibold text-sm2 lg:text-base">View All</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[30px] lg:grid lg:grid-cols-2">
+                <div class="col-span-1">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img src="../asset/popular2.png" class="object-cover w-full h-[317px] lg:h-[502px]" alt="">
+                        <div class="absolute bottom-0 w-full p-4 lg:p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-center">
+                            <div class="text-[rgba(255, 255, 255, 0.70)] opacity-70 flex flex-row gap-3">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-base">23 Desember 2023</span>
+                                <img src="../asset/logo/Ellipse 51.svg" alt="">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-base">Success Stories</span>
+                            </div>
+                            <h1 class="mt-0 lg:mt-3 font-bold text-sm2 lg:text-[28px] text-start lg:leading-[36px] leading-[18px] capitalize">Luxury Living: Exploring High-End Real
+                                Estate Markets</h1>
+                            <h2 class="mt-2 lg:mt-3 text-start font-normal lg:font-semibold text-[12px] lg:text-base opacity-70">Feeling like work is a constant source of stress?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex col-span-1">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img src="../asset/popular2.png" class="object-cover w-full h-[317px] lg:h-[502px]" alt="">
+                        <div class="absolute bottom-0 w-full p-4 lg:p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-center">
+                            <div class="text-[rgba(255, 255, 255, 0.70)] opacity-70 flex flex-row gap-3">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-base">9 Nov 2023</span>
+                                <img src="../asset/logo/Ellipse 51.svg" alt="">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-base">Tips</span>
+                            </div>
+                            <h1 class="mt-0 lg:mt-3 font-bold text-sm2 lg:text-[28px] text-start lg:leading-[36px] leading-[18px] capitalize">Short vs. Long-Term Real Estate Investing</h1>
+                            <h2 class="mt-2 lg:mt-3 text-start font-normal lg:font-semibold text-[12px] lg:text-base opacity-70">Whether you’re speaking with the recruiter or you're final...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section>
+        <div class="container px-5 pb-[49px] lg:px-0 lg:mx-[100px] lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
+            <div class="items-center flex flex-row justify-between">
+                <div class="flex flex-col gap-2 lg:gap-3">
+                    <h1 class="font-bold text-sm lg:text-3xl">Recent Articles</h1>
+                    <p class="text-[#7F879E] font-normal text-[12px] lg:text-base">Newest update article from AyEstate</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <button class="rounded-xl border border-maincolor px-3 py-2 lg:px-4 lg:py-3 font-semibold text-sm2 lg:text-base">View All</button>
+                </div>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-3 lg:gap-[29px] gap-5">
+                <div class="col-span-1">
+                    <div class="flex flex-col gap-4 lg:gap-6">
+                        <img src="../asset/Rectangle 9620.png" alt="">
+                        <div class="flex flex-row items-center gap-3">
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">4 February 2024</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                        <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                    </svg>
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">Tips</span>
+                        </div>
+                        <p class="mt-[-10px] lg:mt-[-12px] font-bold text-sm2 lg:text-2xl">15 Reasons Why Real Estate is the Best Investment</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex flex-col gap-4 lg:gap-6">
+                        <img src="../asset/Rectangle 9620 (1).png" alt="">
+                        <div class="flex flex-row items-center gap-3">
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">24 January 2024</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                        <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                    </svg>
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">Success Stories</span>
+                        </div>
+                        <p class="mt-[-10px] lg:mt-[-12px] font-bold text-sm2 lg:text-2xl">Renters are still moving-these markets are
+                            where you should be investing</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex flex-col gap-4 lg:gap-6">
+                        <img src="../asset/Rectangle 9620 (2).png" alt="">
+                        <div class="flex flex-row items-center gap-3">
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">21 January 2024</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                        <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
+                                    </svg>
+                            <span class="text-[#7F879E] font-normal text-[12px] lg:text-[18px]">Invest</span>
+                        </div>
+                        <p class="mt-[-10px] lg:mt-[-12px] font-bold text-sm2 lg:text-2xl">Every major u.s. city where it’s more expensive
+                            to rent than buy</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img class="lg:hidden cursor-pointer" @click="open = !open" src="../asset/logo/nav.svg" alt="">
                     <div class="hidden lg:flex space-x-6">
                         <ul class="flex gap-12 ">
-                            <li class="text-base text-black font-bold">Home</li>
+                            <li class="text-base text-secondcolor font-semibold">Home</li>
                             <li class="text-base text-secondcolor font-semibold">Listing</li>
                             <li class="text-base text-secondcolor font-semibold">Company</li>
                             <li class="text-base text-secondcolor font-semibold">Blog</li>
