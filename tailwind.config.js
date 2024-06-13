@@ -43,7 +43,10 @@ module.exports = {
       backgroundPosition: {
         'top-left': 'top left',
         'bottom-right': 'bottom right',
-      }
+      },
+      boxShadow: {
+        'custom-shadow': '0px 4px 120px 0px rgba(151, 159, 183, 0.20)',
+      },
     },
   },
   plugins: [],
