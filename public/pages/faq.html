@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tailwind Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Alpine Js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <title>FAQ</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <section>
+        <div class="container px-5 lg:m-[100px] flex flex-col text-center justify-center items-center">
+            <h1 class="font-bold text-2xl lg:text-[44px] capitalize">Helping you is our priority</h1>
+            <div class="mt-[50px] w-full lg:w-2/3 relative shadow-custom-shadow rounded-xl">                
+                <form class="mx-auto" action="#" method="get">   
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-black">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-blue-600 dark:text-[#3860E2]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </div>
+                    <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-[#7F879E] rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search question" required />
+                    <button type="submit" class=" hidden lg:flex text-black absolute end-2.5 bottom-[6px] bg-maincolor hover:bg-maincolor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-[10px] dark:bg-maincolor dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-3 font-normal lg:font-semibold text-[12px] lg:text-sm items-center justify-center max-w-72 lg:max-w-full text-center w-full">
+                <span class="text-[#7F879E]">*We are collect your searching keywords to improve our FAQ</span>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-12 gap-5 w-full text-center mt-[50px] lg:mt-[100px]">
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/akun.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">My Account</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">From how to setup your account to how to apply for a job</p>
+                </div>
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/mailblue.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">Email Campaigns</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">Engage your contacts using th ebest mobile- friendly email design tools</p>
+                </div>
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/video.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">Luxury Properties</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">Find all our resource with Luxury Properties Management Real Estate</p>
+                </div>
+            </div>
+            <h1 class="font-bold text-2xl lg:text-[44px] capitalize lg:mt-[200px] mt-[100px]">Our Website</h1>
+            <div class="mt-4 lg:mt-[30px] font-normal lg:font-semibold text-sm2 lg:text-base items-center justify-center text-center w-full">
+                <span class="text-[#7F879E]">Frequently asked question about my account</span>
+            </div>
+            <div class="mt-[30px] lg:mt-[50px] max-w-2xl lg:max-w-full max-auto">
+                <div class="bg-white rounded-2xl border-2">
+                    <div class="accordion-header flex items-center justify-between">
+                        <span class="font-bold text-sm lg:text-2xl text-start capitalize">What Types of properties are 
+                            available on your website?</span>
+                        <i class='bx bx-plus text-3xl icon'></i>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="p-6 pt-0 text-start">
+                            <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                            <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[20px] lg:mt-[30px] max-w-2xl lg:max-w-full max-auto">
+                <div class="bg-white rounded-2xl border-2">
+                    <div class="accordion-header flex items-center justify-between">
+                        <span class="font-bold text-sm lg:text-2xl text-start capitalize">How Do i schedule a viewing of a property listed on your website?</span>
+                        <i class='bx bx-plus text-3xl icon'></i>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="p-6 pt-0 text-start">
+                            <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                            <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[20px] lg:mt-[30px] max-w-2xl lg:max-w-full max-auto">
+                <div class="bg-white rounded-2xl border-2">
+                    <div class="accordion-header flex items-center justify-between">
+                        <span class="font-bold text-sm lg:text-2xl text-start capitalize">Can I list my property for sale or rent on your website?</span>
+                        <i class='bx bx-plus text-3xl icon'></i>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="p-6 pt-0 text-start">
+                            <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                            <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[20px] lg:mt-[30px] max-w-2xl lg:max-w-full max-auto">
+                <div class="bg-white rounded-2xl border-2">
+                    <div class="accordion-header flex items-center justify-between">
+                        <span class="font-bold text-sm lg:text-2xl text-start capitalize">What should i consider when buying a home?</span>
+                        <i class='bx bx-plus text-3xl icon'></i>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="p-6 pt-0 text-start">
+                            <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                            <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[20px] lg:mt-[30px] max-w-2xl lg:max-w-full max-auto">
+                <div class="bg-white rounded-2xl border-2">
+                    <div class="accordion-header flex items-center justify-between">
+                        <span class="font-bold text-sm lg:text-2xl text-start capitalize">how do i determine the value of my property?</span>
+                        <i class='bx bx-plus text-3xl icon'></i>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="p-6 pt-0 text-start">
+                            <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                            <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 lg:mt-[50px] w-full lg:w-auto">
+                <button class="bg-maincolor px-5 py-4 w-full lg:w-auto rounded-xl font-bold lg:font-semibold text-[12px] lg:text-sm">Give a Quote</button>
+            </div>
+            <h1 class="font-bold text-2xl lg:text-[44px] capitalize mt-[53px] lg:mt-[200px]">Still Have a question?</h1>
+            <div class="mt-4 lg:mt-[30px] font-normal text-[14px] lg:text-base items-center justify-center max-w-full lg:max-w-[727px] text-center w-full">
+                <span class="text-[#7F879E]">If you cannot find answer to your question in our FAQ, you can always contact us.
+                    We wil answer to you shortly!</span>
+            </div>
+            <div class="flex flex-col lg:grid lg:grid-cols-12 gap-5 w-full text-center mt-[50px] mb-[100px] lg:mb-[200px]">
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/accountgreen.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">+(1) 2345 6789</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">Our 24/7 Customer Services</p>
+                </div>
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/mailgreen.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">support@ayestate.com</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">Alternative way to get anwser faster.</p>
+                </div>
+                <div class="col-span-4 border-[#F6F8F9] border-solid border-2 rounded-2xl px-[14px] py-4 text-center items-center justify-center lg:px-6 lg:py-[34px]">
+                    <img src="../asset/logo/web.svg" alt="" class="mx-auto">
+                    <h1 class="mt-4 lg:mt-[30px] leading-tight font-bold text-sm lg:text-2xl">Real Estate Management</h1>
+                    <p class="text-[#7F879E] mt-2 lg:mt-4 leading-tight font-normal text-sm2 lg:text-base">Our community ready to help you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script>
+        const accordionHeader = document.querySelectorAll('.accordion-header')
+
+        accordionHeader.forEach(accordionHeader => {
+            accordionHeader.addEventListener("click", event => {
+                accordionHeader.classList.toggle("active")
+                const accordionBody = accordionHeader.nextElementSibling
+                const icon = accordionHeader.querySelector('i')
+                if(accordionHeader.classList.contains("active")) {
+                    accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+                    icon.classList.remove("bx-plus");
+                    icon.classList.add("bx-minus");
+                }
+                else{
+                    accordionBody.style.maxHeight = 0;
+                    icon.classList.remove("bx-minus");
+                    icon.classList.add("bx-plus");
+                }
+            } )
+        })
+    </script>
+
+</body>
+</html>

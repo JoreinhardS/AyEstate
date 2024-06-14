@@ -25,6 +25,8 @@
             background-repeat: no-repeat;
         }
     </style>
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>AyEstate</title>
 </head>
 <body>
@@ -36,14 +38,14 @@
                 <img class="lg:hidden cursor-pointer" @click="open = !open" src="asset/logo/nav.svg" alt="">
                 <div class="hidden lg:flex space-x-6">
                     <ul class="flex gap-12 ">
-                        <li class="text-base text-black font-bold">Home</li>
-                        <li class="text-base text-secondcolor font-semibold">Listing</li>
+                        <li class="text-base text-black font-bold"><a href="index.html"></a>Home</li>
+                        <li class="text-base text-secondcolor font-semibold"><a href="pages/listing.html">Listing</a></li>
                         <li class="text-base text-secondcolor font-semibold">Company</li>
                         <li class="text-base text-secondcolor font-semibold"><a href="pages/blog.html">Blog</a></li>
                         <li class="text-base text-secondcolor font-semibold"><a href="pages/about.html">About Us</a></li>
                     </ul>
                 </div>
-                <button class="hidden lg:flex w-40 bg-maincolor px-3 py-4 font-semibold rounded-xl text-sm justify-center border">Contact Us</button> 
+                <button class="hidden lg:flex w-40 bg-maincolor px-3 py-4 font-semibold rounded-xl text-sm justify-center border"><a href="pages/contact.html">Contact Us</a></button> 
             </div>
             <div x-show="open" class="fixed lg:hidden flex flex-col right-0 mr-5 w-1/3 bg-maincolor rounded-xl p-4"
                 x-transition:enter="transition ease-out duration-300"
@@ -53,8 +55,8 @@
                 x-transition:leave-start="opacity-100 scale-100"
                 x-transition:leave-end="opacity-0 scale-90">
                 <ul class="space-y-4">
-                    <li><a href="#" class="block text-sm font-semibold">Home</a></li>
-                    <li><a href="#" class="block text-sm font-semibold">Listing</a></li>
+                    <li><a href="index.html" class="block text-sm font-semibold">Home</a></li>
+                    <li><a href="pages/listing.html" class="block text-sm font-semibold">Listing</a></li>
                     <li><a href="#" class="block text-sm font-semibold">Company</a></li>
                     <li><a href="pages/blog.html" class="block text-sm font-semibold">Blog</a></li>
                     <li><a href="pages/about.html" class="block text-sm font-semibold">About Us</a></li>
@@ -306,31 +308,93 @@
 
     <!-- FAQ Section -->
     <section>
-        <div class="container mx-auto py-[50px] px-5">
+        <div class="container mx-auto py-[50px] lg:py-[100px] px-5">
             <div class="relative w-full lg:w-2/3 flex flex-col gap-4 lg:gap-8 text-center justify-center mx-auto items-center">
                 <p class="hidden lg:block text-[#F59A74] lg:font-semibold lg:text-base ">FAQ</p>
                 <h1 class="font-bold lg:font-bold text-2xl lg:text-4xl leading-[31px] lg:leading-[57px]">Frequently Asked
                     Question</h1>
                 <p class="text-[#7F879E] font-normal text-sm2 lg:text-base leading-6 lg:leading-7">Did you find the question as you expected?</p>
             </div>
-            <div id="accordion-collapse" data-accordion="collapse">
-                <!-- Pertanyaan 1 -->
-                <div class="accordion-item mb-4">
-                  <h2 id="accordion-collapse-heading-1">
-                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                      <span>What is Flowbite?</span>
-                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                      </svg>
-                    </button>
-                  </h2>
-                  <div id="accordion-collapse-body-1" class="accordion-body" aria-labelledby="accordion-collapse-heading-1">
-                    <div class="p-5 border-t border-gray-200 dark:border-gray-700">
-                      <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                      <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+            <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-5 mt-6 lg:mt-[53px]">
+                <div class="mt-[20px] max-w-full max-auto">
+                    <div class="bg-white rounded-2xl border-2">
+                        <div class="accordion-header flex items-center justify-between">
+                            <span class="font-bold text-sm lg:text-2xl text-start capitalize">What Types of properties are 
+                                available on your website?</span>
+                            <i class='bx bx-plus text-3xl icon'></i>
+                        </div>
+    
+                        <div class="accordion-body">
+                            <div class="p-6 pt-0 text-start">
+                                <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                                <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
+                <div class="mt-[20px] max-w-full max-auto">
+                    <div class="bg-white rounded-2xl border-2">
+                        <div class="accordion-header flex items-center justify-between">
+                            <span class="font-bold text-sm lg:text-2xl text-start capitalize">How Do i schedule a viewing of a property listed on your website?</span>
+                            <i class='bx bx-plus text-3xl icon'></i>
+                        </div>
+    
+                        <div class="accordion-body">
+                            <div class="p-6 pt-0 text-start">
+                                <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                                <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[20px] max-w-full max-auto">
+                    <div class="bg-white rounded-2xl border-2">
+                        <div class="accordion-header flex items-center justify-between">
+                            <span class="font-bold text-sm lg:text-2xl text-start capitalize">Can i list my property for sale or rent on your website?</span>
+                            <i class='bx bx-plus text-3xl icon'></i>
+                        </div>
+    
+                        <div class="accordion-body">
+                            <div class="p-6 pt-0 text-start">
+                                <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                                <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[20px] max-w-full max-auto">
+                    <div class="bg-white rounded-2xl border-2">
+                        <div class="accordion-header flex items-center justify-between">
+                            <span class="font-bold text-sm lg:text-2xl text-start capitalize">What should i consider when buying a home?</span>
+                            <i class='bx bx-plus text-3xl icon'></i>
+                        </div>
+    
+                        <div class="accordion-body">
+                            <div class="p-6 pt-0 text-start">
+                                <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                                <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[20px] max-w-full max-auto">
+                    <div class="bg-white rounded-2xl border-2">
+                        <div class="accordion-header flex items-center justify-between">
+                            <span class="font-bold text-sm lg:text-2xl text-start capitalize">how do i determine the value of my property?</span>
+                            <i class='bx bx-plus text-3xl icon'></i>
+                        </div>
+    
+                        <div class="accordion-body">
+                            <div class="p-6 pt-0 text-start">
+                                <p class="text-[#7F879E] font-normal lg:font-semibold text-sm2 lg:text-base">Our website lists a variety of properties including residential homes, apartments, condos, townhouses, commercial properties, vacant land, and more. You can filter your search based on your preferences.</p>
+                                <p class="mt-5 lg:mt-6"><a href="#" class="text-maincolor font-bold lg:text-base text-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 lg:mt-[50px] w-full lg:w-auto text-center items-center mb-[]">
+                <button class="bg-maincolor px-5 py-4 w-full lg:w-auto rounded-xl font-bold lg:font-semibold text-[12px] lg:text-sm">Give a Quote</button>
             </div>
         </div>
     </section>
@@ -393,25 +457,25 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const buttons = document.querySelectorAll("[data-accordion-target]");
-          buttons.forEach(button => {
-            button.addEventListener("click", function () {
-              const targetId = button.getAttribute("data-accordion-target");
-              const targetElement = document.querySelector(targetId);
-      
-              if (targetElement.classList.contains("expanded")) {
-                targetElement.classList.remove("expanded");
-                button.setAttribute("aria-expanded", "false");
-                button.querySelector("svg").classList.add("rotate-180");
-              } else {
-                targetElement.classList.add("expanded");
-                button.setAttribute("aria-expanded", "true");
-                button.querySelector("svg").classList.remove("rotate-180");
-              }
-            });
-          });
-        });
-      </script>
+        const accordionHeader = document.querySelectorAll('.accordion-header')
+
+        accordionHeader.forEach(accordionHeader => {
+            accordionHeader.addEventListener("click", event => {
+                accordionHeader.classList.toggle("active")
+                const accordionBody = accordionHeader.nextElementSibling
+                const icon = accordionHeader.querySelector('i')
+                if(accordionHeader.classList.contains("active")) {
+                    accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+                    icon.classList.remove("bx-plus");
+                    icon.classList.add("bx-minus");
+                }
+                else{
+                    accordionBody.style.maxHeight = 0;
+                    icon.classList.remove("bx-minus");
+                    icon.classList.add("bx-plus");
+                }
+            } )
+        })
+    </script>
 </body>
 </html>

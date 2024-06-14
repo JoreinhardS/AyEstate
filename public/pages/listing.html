@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tailwind Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Alpine Js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <title>Listing</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="px-0 lg:px-[120px] pb-[57px] lg:pb-[77px] ">
+        <div class="container px-6 py-[18px] lg:px-0 lg:py-0 ">
+            <div class="flex flex-row gap-2 items-center font-normal text-[12px] lg:text-sm">
+                <span class="text-[#1D9E34]">Home</span>
+                <i class='bx bx-chevron-right' style="color: #818B9C"></i>
+                <span class="text-[#1D9E34]">Real Estate</span>
+                <i class='bx bx-chevron-right' style="color: #818B9C"></i>
+                <span>Villa</span>
+            </div>
+            <div class="mt-6 lg:mt-[32px] flex flex-col lg:flex-row lg:justify-between">
+                <div class="flex flex-col">
+                    <span class="font-semibold text-sm lg:text-2xl">Showing listings properties for “Villa”</span>
+                    <span class="font-normal text-[12px] lg:text-sm text-[#818B9C]">Showing 1 - 60 Properties</span>
+                </div>
+                <div class="flex flex-row items-center gap-1 justify-between mt-6 lg:mt-0">
+                    <span>Sort By: </span>
+                    <div class="flex flex-1 flex-row gap-6 items-center divide-x-4 divide-lightgrey divide">
+                        <form class="mx-auto w-full">
+                            <select id="filter" class="bg-white border border-gray-300 text-gray-900 max-w-40 lg:max-w-40 text-[12px] w-full lg:text-sm2 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-[10px] lg:p-4 dark:bg-white dark:border-gray-600 dark:placeholder-black dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose Filter</option>
+                                <option value="RE">Relevant Products</option>
+                                <option value="TR">Trendy Products</option>
+                                <option value="HO">Hot Products</option>
+                                <option value="UN">Underated Products</option>
+                            </select>
+                        </form>
+                        <img src="../asset/logo/grid.svg" class="pl-6" alt="">
+                    </div>
+                    <img src="../asset/logo/expand.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
