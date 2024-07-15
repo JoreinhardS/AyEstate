@@ -27,14 +27,18 @@ module.exports = {
         '3xl': '2rem',
         '4xl': '2.25rem',
         '5xl': '3rem',
-        '6xl': '5rem'
+        '6xl': '5rem',
+        '5vw': '5vw',
+        '10vw': '10vw'
       },
       screens: {
         sm: '640px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',
-        '2xl': '1536px'
+        '2xl': '1536px',
+        'max-w-250px': {'max': '250px'},
+        'max-w-300px': {'max': '300px'},
       },
       backgroundImage: {
         'custom-bg-top-left': "url('/asset/Abstract2.png')",

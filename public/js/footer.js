@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded',() => {
                 <div>
                     <a href="#" class="logo text-playball text-3xl font-normal">AyEstate</a>
                 </div>
-                <div class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-5 lg:leading-8">hello.ayestate@example.com <br>
+                <div class="text-[#7F879E] font-normal lg:font-medium break-words text-sm2 lg:text-base leading-5 lg:leading-8">hello.ayestate@example.com <br>
                     (+1) 2345 6789</div>
                 <div class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-5 lg:leading-8">4140 Parker Rd. Allentown, <br>
                     New Mexico 31134</div>
                 <hr class="lg:hidden h-0.5 bg-[##7F879E] my-4 w-full">
             </div>
-            <div class="grid grid-cols-2 gap-x-6 gap-y-8 mt-8 lg:mt-0 lg:gap-x-20 lg:grid-cols-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 mt-8 lg:mt-0 lg:gap-x-20">
                 <div class="flex flex-col gap-3 w-full">
                     <h1 class="text-white lg:mb-8 font-bold lg:font-semibold text-sm lg:text-base leading-5 lg:leading-6">Pages</h1>
                     <p class="text-[#7F879E] font-normal lg:font-medium text-sm2 lg:text-base leading-6 lg:leading-8">Listings</p>

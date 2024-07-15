@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <button class="hidden lg:flex w-40 bg-maincolor px-3 py-4 font-semibold rounded-xl text-sm justify-center border"><a href="contact.html">Contact Us</a></button> 
                 </div>
-                <div x-show="open" class="fixed lg:hidden flex flex-col right-0 mr-5 w-1/3 bg-maincolor rounded-xl p-4 z-50"
+                <div x-show="open" class="fixed lg:hidden flex flex-col md:left-auto right-0 mr-5 w-1/3 bg-maincolor rounded-xl p-4 z-50"
                     x-transition:enter="transition ease-out duration-300"
                     x-transition:enter-start="opacity-0 scale-90"
                     x-transition:enter-end="opacity-100 scale-100"
@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     x-transition:leave-start="opacity-100 scale-100"
                     x-transition:leave-end="opacity-0 scale-90">
                     <ul class="space-y-4">
-                        <li><a href="../index.html" class="block text-sm font-semibold">Home</a></li>
-                        <li><a href="listing.html" class="block text-sm font-semibold">Listing</a></li>
-                        <li><a href="#" class="block text-sm font-semibold">Company</a></li>
-                        <li><a href="blog.html" class="block text-sm font-semibold">Blog</a></li>
-                        <li><a href="about.html" class="block text-sm font-semibold">About Us</a></li>
+                        <li><a href="../index.html" class="block max-w-250px:text-5vw text-sm font-semibold">Home</a></li>
+                        <li><a href="listing.html" class="block max-w-250px:text-5vw text-sm font-semibold">Listing</a></li>
+                        <li><a href="#" class="block max-w-250px:text-5vw text-sm font-semibold">Company</a></li>
+                        <li><a href="blog.html" class="block max-w-250px:text-5vw text-sm font-semibold">Blog</a></li>
+                        <li><a href="about.html" class="block max-w-250px:text-5vw text-sm font-semibold">About Us</a></li>
                     </ul>
                 </div>
             </div>

@@ -22,9 +22,10 @@
 <body>
 
     <section>
-        <div class="container px-5 lg:m-[100px] flex flex-col text-center justify-center items-center">
+        <!-- <div class="container px-5 lg:px-0 lg:m-[100px] flex flex-col text-center justify-center items-center"> -->
+        <div class="px-5 mx-auto lg:my-[100px] flex flex-col text-center justify-center items-center">
             <h1 class="font-bold text-2xl lg:text-[44px]">Our Blog</h1>
-            <div class="mt-[50px] w-full lg:w-2/3 relative shadow-custom-shadow rounded-xl">                
+            <div class="mt-[50px] w-full md:w-2/3 lg:w-2/3 relative shadow-custom-shadow rounded-xl">                
                 <form class="mx-auto" action="search.html" method="get">   
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-black">Search</label>
                     <div class="relative">
@@ -34,11 +35,11 @@
                             </svg>
                         </div>
                     <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-[#7F879E] rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search article name" required />
-                    <button type="submit" class=" hidden lg:flex text-black absolute end-2.5 bottom-[6px] bg-maincolor hover:bg-maincolor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-[10px] dark:bg-maincolor dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    <button type="submit" class=" hidden md:flex lg:flex text-black absolute end-2.5 bottom-[6px] bg-maincolor hover:bg-maincolor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-[10px] dark:bg-maincolor dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                     </div>
                 </form>
             </div>
-            <div class="flex flex-row gap-4 lg:gap-6 mt-3 font-normal lg:font-semibold text-[12px] lg:text-sm items-center justify-start lg:justify-center text-start lg:text-center w-full">
+            <div class="flex flex-row gap-4 max-w-250px:hidden lg:gap-6 mt-3 font-normal mlg:font-semibold text-[12px] lg:text-sm items-center justify-start lg:justify-center text-start lg:text-center w-full md:w-1/2">
                 <span class="text-[#7F879E]">Suggested:</span>
                 <span class="text-[#3860E2]">Success Stories</span>
                 <span class="text-[#3860E2]">Invest</span>
@@ -50,8 +51,8 @@
 
     <!-- List -->
     <section>
-        <div class="container p-4 py-[50px] lg:pb-0 lg:p-0 lg:m-[100px] flex flex-col lg:grid lg:grid-cols-7 gap-[30px]">
-            <div class="col-span-4">
+        <div class="container p-4 py-12 lg:pb-0 lg:p-0 mx-auto flex flex-col lg:flex lg:flex-row gap-[30px]">
+            <div class="flex-1">
                 <div class="relative rounded-2xl overflow-hidden">
                     <a href="article.html"><img src="../asset/bloh.png" class="object-cover w-full h-[317px] lg:h-[588px]" alt=""></a>
                     <div class="absolute bottom-0 w-full p-4 lg:p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-center">
@@ -64,26 +65,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-3">
+            <div class="flex-1">
                 <div class="flex flex-col gap-5 lg:gap-[30px]">
-                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                    <div class="flex flex-row items-center max-w-250px:gap-1 gap-3 lg:gap-6">
                         <img src="../asset/job.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
                         <div class="flex flex-col gap-[6px] lg:gap-6">
-                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
+                            <div class="text-[#7F879E] font-normal lg:font-semibold max-w-250px:gap-1 flex flex-row gap-3 items-center">
                                 <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">2 Feb 2024</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
                                     <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
                                 </svg>
-                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">Invest Strategies</span>
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">Invest</span>
                             </div>
                             <p class="font-bold text-sm2 lg:text-xl">The Quick Guide to Virtual House Flipping</p>
                         </div>
                     </div>
-                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                    <div class="flex flex-row items-center max-w-250px:gap-1 gap-3 lg:gap-6">
                         <img src="../asset/stock.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
                         <div class="flex flex-col gap-[6px] lg:gap-6">
-                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
-                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">20 January 2024</span>
+                            <div class="text-[#7F879E] font-normal lg:font-semibold max-w-250px:gap-1 flex flex-row gap-3 items-center">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">20 Jan 2024</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
                                     <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
                                 </svg>
@@ -92,11 +93,11 @@
                             <p class="font-bold text-sm2 lg:text-xl">Expert Home price Forecasts for 2024 revised up</p>
                         </div>
                     </div>
-                    <div class="flex flex-row items-center gap-3 lg:gap-6">
+                    <div class="flex flex-row items-center max-w-250px:gap-1 gap-3 lg:gap-6">
                         <img src="../asset/rumah.png" class="w-[100px] h-[100px] lg:w-auto lg:h-auto" alt="">
                         <div class="flex flex-col gap-[6px] lg:gap-6">
-                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row gap-3 items-center">
-                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">15 January 2024</span>
+                            <div class="text-[#7F879E] font-normal lg:font-semibold flex flex-row max-w-250px:gap-1 gap-3 items-center">
+                                <span class="font-normal lg:font-semibold text-[12px] lg:text-[16px]">15 Jan 2024</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
                                     <circle cx="1.5" cy="2" r="1.5" fill="#D4D7DF"/>
                                 </svg>
@@ -112,7 +113,7 @@
 
     <!-- Popular -->
     <section>
-        <div class="container px-5 pb-[50px] lg:px-0 lg:mx-[100px] lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
+        <div class="container px-5 pb-[50px] lg:pt-[100px] lg:px-0 mx-auto lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
             <div class="items-center flex flex-row justify-between">
                 <div class="flex flex-col gap-2 lg:gap-3">
                     <h1 class="font-bold text-sm lg:text-3xl">Popular Articles</h1>
@@ -158,7 +159,7 @@
 
     <!-- Recent Articles -->
     <section>
-        <div class="container px-5 pb-[49px] lg:px-0 lg:mx-[100px] lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
+        <div class="container px-5 pb-[49px] lg:px-0 mx-auto lg:pb-[100px] flex flex-col gap-[30px] lg:gap-[50px]">  
             <div class="items-center flex flex-row justify-between">
                 <div class="flex flex-col gap-2 lg:gap-3">
                     <h1 class="font-bold text-sm lg:text-3xl">Recent Articles</h1>
